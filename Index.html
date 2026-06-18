@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nico Georgiades | Project Management Portfolio</title>
-    <meta name="description" content="Professional PM portfolio specializing in international supply chain scaling, lean operations, and modern retrospective workflow automation optimizations.">
+    <meta name="description" content="Professional Project Management portfolio specializing in global supply chain scaling, lean operations, and modern workflow automation optimizations.">
+    <!-- Stable Tailwind CSS via v3 Play CDN with Theme Config -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Configure Tailwind to support class-based dark mode switching
@@ -12,6 +13,7 @@
             darkMode: 'class'
         }
     </script>
+    <!-- Google Fonts for premium typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -23,27 +25,34 @@
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 selection:bg-indigo-500 selection:text-white">
 
+    <!-- NAVIGATION BAR -->
     <nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
+                <!-- Branding Header with Your Name -->
                 <div class="flex-shrink-0">
                     <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
                         Nico <span class="text-purple-600 dark:text-purple-400">Georgiades</span>
                     </span>
                 </div>
+                <!-- Desktop Nav Links & Theme Toggle -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#hero" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Home</a>
                     <a href="#about" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
                     <a href="#case-studies" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Case Studies</a>
                     <a href="#artifacts" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Artifacts</a>
                     
+                    <!-- Theme Toggle Button (Desktop) -->
                     <button id="theme-toggle-btn" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all focus:outline-none cursor-pointer" aria-label="Toggle Theme">
+                        <!-- Sun Icon -->
                         <svg id="theme-sun" class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z"/></svg>
+                        <!-- Moon Icon -->
                         <svg id="theme-moon" class="w-5 h-5 block dark:hidden text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
                     </button>
 
                     <a href="#contact" class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow-sm transition-all">Contact Me</a>
                 </div>
+                <!-- Mobile Menu Button Controls -->
                 <div class="flex items-center gap-2 md:hidden">
                     <button id="theme-toggle-mobile-btn" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all focus:outline-none cursor-pointer" aria-label="Toggle Theme">
                         <svg id="theme-sun-mobile" class="w-5 h-5 hidden dark:block text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 100 14 7 7 0 000-14z"/></svg>
@@ -58,6 +67,7 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-4 space-y-2 shadow-inner transition-colors duration-300">
             <a href="#hero" class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md">Home</a>
             <a href="#about" class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md">About</a>
@@ -67,13 +77,16 @@
         </div>
     </nav>
 
+    <!-- 1. HERO SECTION -->
     <header id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-slate-100 via-white to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 overflow-hidden transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto">
+                <!-- Badges / Certifications Pill -->
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 dark:bg-indigo-950/50 dark:border-indigo-800 text-xs font-semibold text-indigo-700 dark:text-indigo-300 uppercase tracking-wider mb-6">
                     <span>CAPM®</span> • <span>Google AI Certified</span> • <span>BBA</span>
                 </div>
                 
+                <!-- Personalized Professional Name Header Placement with Purple Accent -->
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none mb-6 transition-colors duration-300">
                     Nico <span class="text-purple-600 dark:text-purple-400">Georgiades</span>
                     <span class="block text-2xl sm:text-3xl md:text-4xl font-bold text-slate-700 dark:text-slate-300 mt-4 font-normal leading-relaxed">
@@ -81,13 +94,16 @@
                     </span>
                 </h1>
                 
+                <!-- Brief High-Impact Summary -->
                 <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-normal leading-relaxed mb-10 max-w-2xl mx-auto">
-                    A metrics-driven Project Manager with a proven track record of bootstrapping a multi-warehouse enterprise, coordinating complex international logistics, and architecting data-driven operational frameworks.
+                    A metrics-driven Project Manager with a proven track record of bootstrapping multi-warehouse operations, managing international maritime logistics, and deploying localized dealer structures.
                 </p>
+                <!-- Call to Actions -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a href="#case-studies" class="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white font-medium rounded-lg shadow-lg shadow-indigo-200 dark:shadow-indigo-950/50 hover:bg-indigo-700 transition-all text-center">
-                        View Portfolio Case Studies
+                        View 3-Phase Case Studies
                     </a>
+                    <!-- Direct local link to your resume PDF file -->
                     <a href="resume.pdf" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-200 font-medium rounded-lg border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-all text-center shadow-sm flex items-center justify-center gap-2">
                         <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         Download Resume
@@ -95,13 +111,16 @@
                 </div>
             </div>
         </div>
+        <!-- Decorative subtle grid background lines -->
         <div class="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-60 dark:opacity-40 z-0"></div>
     </header>
 
+    <!-- 2. ABOUT & CREDENTIALS SECTION -->
     <section id="about" class="py-20 bg-white dark:bg-slate-950 border-y border-slate-200 dark:border-slate-900 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
+                <!-- Left Column: New Refined Professional Narrative -->
                 <div class="lg:col-span-7 space-y-6">
                     <div class="space-y-2">
                         <span class="text-xs font-bold tracking-wider uppercase text-indigo-600 dark:text-indigo-400">Professional Narrative</span>
@@ -110,34 +129,33 @@
                         </h2>
                     </div>
                     <p class="text-base text-slate-600 dark:text-slate-400 leading-relaxed">
-                        My background as an operations and project management practitioner is built on real-world execution. During my undergraduate studies, I co-founded and systematically scaled a bootstrapped furniture retail and logistics business. Over its lifecycle, the venture expanded fluidly from a simple residential garage proof-of-concept into a multi-warehouse enterprise managing bulk international container freight.
+                        My background as an operations and project management practitioner is built on real-world execution. During my undergraduate studies, I co-founded and systematically scaled a bootstrapped furniture retail and logistics business alongside a strategic partner. Over its lifecycle, the project evolved through three discrete operational phases: an initial hyper-local used furniture arbitrage model, an expansion into bulk international container shipping, and a final scale-up to multiple active facilities when transitioning to domestic manufacturer-dealer operations.
                     </p>
                     <p class="text-base text-slate-600 dark:text-slate-400 leading-relaxed">
-                        A key strategic milestone of the enterprise was pivoting away from used inventory constraints to formalize <strong class="font-bold text-slate-900 dark:text-white">Authorized Dealerships with domestic manufacturers</strong>. This business development change minimized upfront capital risk, shortened product lead times, and significantly increased volume flexibility and structural warranty protections across a newly developed hybrid retail environment.
+                        Crucially, throughout all three expansion lifecycles, the original high-velocity <strong class="font-bold text-slate-900 dark:text-white">used furniture reselling operation remained the central financial cash cow</strong> for the business. This lean, low-overhead baseline constantly generated the liquid capital reserves needed to fund, insulate, and de-risk the wholesale import and domestic distribution models without depending on institutional debt.
                     </p>
                     <p class="text-base text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Operating under a highly lean footprint of just a <strong class="text-slate-900 dark:text-slate-200 font-medium">three-person total headcount</strong>, I directed multi-site facility tenant improvements, optimized logistics fleet overhead, and synchronized slow-moving maritime supply chains with daily retail cash velocity. In the venture's final phase, I single-handedly managed the strategic wind-down, executing lease terminations, asset liquidations, and liability mitigation.
-                    </p>
-                    <p class="text-base text-slate-600 dark:text-slate-400 leading-relaxed">
-                        This intensive experience developed my capability to manage severe dependency and capital risks under tight resource constraints. Today, I combine this operational foundation with modern credentials (CAPM® and Google AI) to design, evaluate, and demonstrate advanced system architectures and workflow optimizations retrospectively.
+                        Operating under a highly lean footprint of a <strong class="text-slate-900 dark:text-slate-200 font-medium">three-person total headcount</strong>, we directed multi-site facility tenant improvements, optimized logistics fleet overhead, and managed severe supply chain dependencies. Today, I combine this hands-on operational foundation with modern credentials (CAPM and Google AI) to design and demonstrate advanced business architectures.
                     </p>
                     
+                    <!-- Quick Stats Row -->
                     <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-100 dark:border-slate-900">
                         <div>
-                            <p class="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">8</p>
-                            <p class="text-xs text-slate-500 uppercase tracking-wide font-medium mt-1">Footprint Iterations</p>
-                        </div>
-                        <div>
                             <p class="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">3</p>
-                            <p class="text-xs text-slate-500 uppercase tracking-wide font-medium mt-1">Core Headcount</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-wide font-medium mt-1">Growth Phases</p>
                         </div>
                         <div>
-                            <p class="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">5</p>
-                            <p class="text-xs text-slate-500 uppercase tracking-wide font-medium mt-1">Fleet Optimizations</p>
+                            <p class="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">2</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-wide font-medium mt-1">Founding Partners</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">8,000</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-wide font-medium mt-1">Peak Sq. Footage</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Right Column: Focus Areas From the Introduction Post-Mortem -->
                 <div class="lg:col-span-5 bg-slate-50 dark:bg-slate-900/50 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-6 transition-colors duration-300">
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white tracking-tight">Core Operational Focus Areas</h3>
                     
@@ -147,8 +165,8 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Lean Resource Allocation</h4>
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Managing escalating multi-site footprints and complex logistical workflows without expanding fixed team size.</p>
+                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Arbitrage & Sourcing Architecture</h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Scouring localized networks and consumer ecosystems using automated keyword scrapers to secure high-margin supply assets.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
@@ -156,8 +174,8 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Fleet Lifecycle Optimization</h4>
-                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Evaluating financial trade-offs between volatile rental models and fixed asset procurement to cut cost-per-mile.</p>
+                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Global Supply Chain Management</h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Coordinating international manufacturing gates, port arrivals, customs entry codes, and intermodal inland tracking layouts.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
@@ -165,8 +183,8 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Agile Project Management</h4>
-                                <p class="text-xs text-slate-400 mt-0.5">Directing low-cost facility build-outs, tenant improvements, and localized signs under fixed deadlines.</p>
+                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Lean JIT Delivery Controls</h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Managing manufacturer-dealer shipping agreements, warehouse cross-dock prep windows, and on-the-spot COD financial loops.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
@@ -174,8 +192,8 @@
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Project Closure & Wind-Down</h4>
-                                <p class="text-xs text-slate-400 mt-0.5">Executing transparent project sunsetting, commercial lease negotiations, asset liquidations, and risk mitigation.</p>
+                                <h4 class="text-sm font-semibold text-slate-900 dark:text-slate-200">Project Sunset & Risk Closures</h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Executing clean wind-downs, legal commercial space lease exits, asset liquidations, and contract credit distributions.</p>
                             </div>
                         </li>
                     </ul>
@@ -185,167 +203,123 @@
         </div>
     </section>
 
+    <!-- 3. CASE STUDIES SECTION -->
     <section id="case-studies" class="py-20 bg-slate-50 dark:bg-slate-900/30 border-b border-slate-200 dark:border-slate-900 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
+            <!-- Section Header -->
             <div class="max-w-3xl mb-16">
-                <span class="text-xs font-bold tracking-wider uppercase text-indigo-600 dark:text-indigo-400">Portfolio Highlights</span>
+                <span class="text-xs font-bold tracking-wider uppercase text-indigo-600 dark:text-indigo-400">Venture Evolution</span>
                 <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl mt-2">
-                    Featured Case Studies
+                    Project Management Case Studies
                 </h2>
                 <p class="text-base text-slate-600 dark:text-slate-400 mt-4">
-                    A deep dive into end-to-end project execution, balancing capital efficiency constraints against high-velocity operational goals.
+                    An operational journey mapped across three progressive growth phases, tracking the transition from a bootstrapped startup to complex global and domestic logistics pipelines.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Case Studies Timeline Stack -->
+            <div class="space-y-12">
                 
-                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm overflow-hidden flex flex-col justify-between hover:border-indigo-200 dark:hover:border-slate-700 transition-all duration-300">
-                    <div class="p-6 sm:p-8 space-y-6">
-                        <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-50 dark:bg-blue-950/50 border border-blue-100 dark:border-blue-900 text-blue-700 dark:text-blue-400 uppercase tracking-wide">Logistics & Infrastructure</span>
-                            <span class="text-xs text-slate-400 font-medium">Undergraduate Venture</span>
+                <!-- PHASE 1 Card -->
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm overflow-hidden p-6 sm:p-8 hover:border-purple-500/50 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-green-50 dark:bg-green-950/50 text-green-700 dark:text-green-400 uppercase tracking-wide">Phase 1: Foundational Growth</span>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight mt-2">Used Furniture Bootstrap & Cash Velocity Engine</h3>
                         </div>
-                        
-                        <div class="space-y-2">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
-                                From Bootstrapped Garage to International Supply Chain
-                            </h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400">
-                                Retrospective Analysis of an Iterative Real Estate & Fleet Scale-Up
-                            </p>
-                        </div>
-
-                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                            Examining the operational lifecycle and ultimate strategic closure of a bootstrapped retail venture. Scaled through 8 physical footprint iterations and 5 fleet lifecycle shifts while maintaining a full-time university workload, validating lean resource management models.
-                        </p>
-
-                        <div class="grid grid-cols-2 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 transition-colors duration-300">
-                            <div>
-                                <span class="text-xs text-slate-500 block">Infrastructure Capacity</span>
-                                <span class="text-sm font-bold text-slate-900 dark:text-slate-200">Garage to 8,000 Sq Ft</span>
-                            </div>
-                            <div>
-                                <span class="text-xs text-slate-500 block">Fleet Optimizations</span>
-                                <span class="text-sm font-bold text-slate-900 dark:text-slate-200">5 Lifecycle Iterations</span>
-                            </div>
-                            <div>
-                                <span class="text-xs text-slate-500 block">Capital Strategy</span>
-                                <span class="text-sm font-bold text-slate-900 dark:text-slate-200">100% Bootstrapped</span>
-                            </div>
-                            <div>
-                                <span class="text-xs text-slate-500 block">Risk Scope</span>
-                                <span class="text-sm font-bold text-slate-900 dark:text-slate-200">Sole Owner Wind-Down</span>
-                            </div>
-                        </div>
-
-                        <div class="space-y-2">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">Core PM Focus Areas</h4>
-                            <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1.5">
-                                <li class="flex items-center gap-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
-                                    Tenant Improvements: Handled physical showroom finish-outs to eliminate GC overhead.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
-                                    Dependency Control: Synchronized maritime shipping delays with local buffer sales velocity.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>
-                                    Strategic Closure: Sole execution of commercial space lease terminations and asset liquidations.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="p-4 rounded-xl bg-amber-50/60 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/60 space-y-2 transition-colors duration-300">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-400 flex items-center gap-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                                Retrospective Post-Mortem & Risk Closure
-                            </h4>
-                            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                                <strong>The Operational Bottleneck:</strong> During aggressive expansion, rapid inventory transition combined with severe cash flow velocity constraints underscored the operational risk of scaling without institutional debt buffers. 
-                            </p>
-                            <p class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                                <strong>Lessons Learned:</strong> Managing partner governance models under extreme dependency risks requires rigid mitigation baselines, continuous API warehouse-management synchronization, and pre-negotiated commercial lease options to preserve corporate flexibility.
-                            </p>
+                        <div class="text-left md:text-right">
+                            <span class="text-xs font-mono text-slate-400 block">Venture Core Cash Cow</span>
+                            <span class="text-sm font-bold text-purple-600 dark:text-purple-400">100% Self-Funded CapEx</span>
                         </div>
                     </div>
-                    
-                    <div class="px-6 py-4 bg-slate-50 dark:bg-slate-950/50 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between transition-colors duration-300">
-                        <span class="text-xs text-slate-400 dark:text-slate-500 font-mono">Infrastructure Baseline Write-Up</span>
-                        <a href="#artifacts" class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors flex items-center gap-1">
-                            View Milestone Schedule
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        The primary venture catalyst involved maximizing asset turnover while minimizing upfront structural liabilities. Managed as an agile partnership by two co-founders, this phase engineered automated notification scrapers to secure undervalued, premium furniture configurations across Facebook Marketplace. Sourced assets were immediately prioritized for sweat-equity aesthetic conditioning, ensuring continuous cash velocity.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 text-xs mb-4">
+                        <div><span class="text-slate-400 block">Sourcing Architecture</span><span class="font-bold text-slate-900 dark:text-slate-200">Facebook Marketplace</span></div>
+                        <div><span class="text-slate-400 block">Inventory Control</span><span class="font-bold text-slate-900 dark:text-slate-200">Rapid-Turnover Model</span></div>
+                        <div><span class="text-slate-400 block">Logistics Assets</span><span class="font-bold text-slate-900 dark:text-slate-200">Internal Fleet Deployment</span></div>
+                        <div><span class="text-slate-400 block">Governance Setup</span><span class="font-bold text-slate-900 dark:text-slate-200">2 Co-Founding Partners</span></div>
+                    </div>
+                    <div class="text-right">
+                        <a href="#artifacts" class="text-xs font-semibold text-purple-600 dark:text-purple-400 hover:underline inline-flex items-center gap-1">
+                            View Bootstrap Baseline Schedule &rarr;
                         </a>
                     </div>
                 </div>
 
-                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm overflow-hidden flex flex-col justify-between hover:border-indigo-200 dark:hover:border-slate-700 transition-all duration-300">
-                    <div class="p-6 sm:p-8 space-y-6">
-                        <div class="flex items-center justify-between">
-                            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-purple-50 dark:bg-purple-950/50 border border-purple-100 dark:border-purple-900 text-purple-700 dark:text-purple-400 uppercase tracking-wide">AI Workflow Automation</span>
-                            <span class="text-xs text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950 px-2 py-0.5 rounded border border-transparent dark:border-indigo-900 transition-colors duration-300">Capabilities Upgrade</span>
+                <!-- PHASE 2 Card -->
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm overflow-hidden p-6 sm:p-8 hover:border-blue-500/50 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-400 uppercase tracking-wide">Phase 2: Scale Expansion</span>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight mt-2">International Bulk Freight Shipping & Infrastructure Scale-Up</h3>
                         </div>
-                        
-                        <div class="space-y-2">
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
-                                Optimizing Operations via Agentic AI
-                            </h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400">
-                                Retrospective Prototype Architecture for Eliminating Manual Bottlenecks
-                            </p>
-                        </div>
-
-                        <div class="space-y-3">
-                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                This blueprint resolves severe tracking friction caused by a lean three-person headcount managing dual facilities. Moving fast in the field, teams frequently texted chaotic, informal transport updates (e.g., product counts, damages, manufacturer delays).
-                            </p>
-                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                                The agentic architecture acts as an <strong class="font-medium text-slate-900 dark:text-white">automated context translator</strong>. It parses colloquial stream data in real-time, extracts intent variables, and instantly maps them into strict, structured data objects—ensuring zero-latency ingestion without human administrative overhead.
-                            </p>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 transition-colors duration-300">
-                            <div>
-                                <span class="text-xs text-slate-500 block">Manual Labor Reduction</span>
-                                <span class="text-sm font-bold text-purple-600 dark:text-purple-400">Projected 95% Drop</span>
-                            </div>
-                            <div>
-                                <span class="text-xs text-slate-500 block">System Latency</span>
-                                <span class="text-sm font-bold text-slate-900 dark:text-slate-200">Zero-Latency Ingestion</span>
-                            </div>
-                            <div>
-                                <span class="text-xs text-slate-500 block">Framework Applied</span>
-                                <span class="text-sm font-bold text-slate-900 dark:text-slate-200">Agile / Scrum Hybrid</span>
-                            </div>
-                            <div>
-                                <span class="text-xs text-slate-500 block">Data Output Structure</span>
-                                <span class="text-sm font-bold text-slate-900 dark:text-slate-200">Standardized JSON Schemas</span>
-                            </div>
-                        </div>
-
-                        <div class="space-y-2">
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">Technical Competence Proof</h4>
-                            <ul class="text-xs text-slate-600 dark:text-slate-400 space-y-1.5">
-                                <li class="flex items-center gap-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                                    Structured Prompting: Formulating explicit operational structures to filter colloquial logs.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                                    Silo Bridging: Real-time data routing prevents technical debt inside lean team units.
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                                    Database Syncing: Proves capacity to engineer automated restocking thresholds via systemic triggers.
-                                </li>
-                            </ul>
+                        <div class="text-left md:text-right">
+                            <span class="text-xs font-mono text-slate-400 block">Global Dependency Risks</span>
+                            <span class="text-sm font-bold text-blue-600 dark:text-blue-400">Bulk Maritime Freight</span>
                         </div>
                     </div>
-                    
-                    <div class="px-6 py-4 bg-slate-50 dark:bg-slate-950/50 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between transition-colors duration-300">
-                        <span class="text-xs text-slate-400 dark:text-slate-500 font-mono">Automation Workflow Blueprint</span>
-                        <span class="text-xs text-indigo-600 dark:text-indigo-400 font-semibold">Technical Blueprint Baseline</span>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        To fulfill volume scaling targets, the venture managed bulk international container shipments from origin manufacturing slots through port entry points. This phase evaluated the extreme operational discipline required to manage dead capital transit gaps up to 35 days long at sea, relying on the fast-turning Facebook Marketplace cash cow to sustain baseline corporate liquidity.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 text-xs mb-4">
+                        <div><span class="text-slate-400 block">Supply Line Scope</span><span class="font-bold text-slate-900 dark:text-slate-200">Bulk Maritime Freight</span></div>
+                        <div><span class="text-slate-400 block">Risk Exposure</span><span class="font-bold text-slate-900 dark:text-slate-200">Demurrage / Capital Freeze</span></div>
+                        <div><span class="text-slate-400 block">Headcount Footprint</span><span class="font-bold text-slate-900 dark:text-slate-200">3-Person Total Unit</span></div>
+                        <div><span class="text-slate-400 block">Project Gate Audit</span><span class="font-bold text-slate-900 dark:text-slate-200">Inbound Quality Controls</span></div>
+                    </div>
+                    <div class="text-right">
+                        <a href="#artifacts" class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1">
+                            View Import Supply Table &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PHASE 3 Card -->
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm overflow-hidden p-6 sm:p-8 hover:border-indigo-500/50 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-400 uppercase tracking-wide">Phase 3: Strategic Realignment</span>
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white tracking-tight mt-2">Pivoting to Domestic Manufacturer-Dealer Just-In-Time Pipeline</h3>
+                        </div>
+                        <div class="text-left md:text-right">
+                            <span class="text-xs font-mono text-slate-400 block">Lean JIT Architecture</span>
+                            <span class="text-sm font-bold text-indigo-600 dark:text-indigo-400">8,000 Sq Ft Footprint</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        To mitigate the capital freeze of maritime transit lines, the enterprise executed a structural pivot, expanding to a simultaneous multi-warehouse footprint and formalizing authorized dealerships with domestic manufacturing units. This realignment allowed real-time tracking loops to activate, shifting intake processes to short 24-48 hour delivery windows, clearing invoices through on-the-spot COD settlements, and executing instant cross-dock outbound deliveries.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 text-xs mb-4">
+                        <div><span class="text-slate-400 block">Supply Model</span><span class="font-bold text-slate-900 dark:text-slate-200">Just-In-Time Partner Model</span></div>
+                        <div><span class="text-slate-400 block">Settlement Strategy</span><span class="font-bold text-slate-900 dark:text-slate-200">Direct COD Settlement</span></div>
+                        <div><span class="text-slate-400 block">Storage Threshold</span><span class="font-bold text-slate-900 dark:text-slate-200">Immediate Last-Mile Routing</span></div>
+                        <div><span class="text-slate-400 block">Contract Guard</span><span class="font-bold text-slate-900 dark:text-slate-200">10% Gate Inspection Credit</span></div>
+                    </div>
+                    <div class="text-right">
+                        <a href="#artifacts" class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline inline-flex items-center gap-1">
+                            View JIT Milestone Layout &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AI Automation Prototype Card -->
+                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm overflow-hidden p-6 sm:p-8 hover:border-purple-500/50 transition-all duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-purple-50 dark:bg-purple-950/50 text-purple-700 dark:text-purple-400 uppercase tracking-wide">Automation Innovation Prototype</span>
+                        <span class="text-xs text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950 px-2 py-0.5 rounded border border-transparent dark:border-indigo-900">Capabilities Guard</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight mb-2">Optimizing Administrative Overhead via Prompt-Engineered Agentic AI</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+                        To support a lean three-person headcount across multiple facilities, this retrospective prompt-engineering architecture acts as an automated context translator. It intercepts unstructured colloquial log streams sent via text from team members in the field and converts them into standardized, schema-validated JSON data configurations, allowing automated database updating and real-time stock monitoring.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 text-xs">
+                        <div><span class="text-slate-400 block">Labor Reduction</span><span class="font-bold text-purple-600 dark:text-purple-400">Projected 95% Cut</span></div>
+                        <div><span class="text-slate-400 block">Data Structure</span><span class="font-bold text-slate-900 dark:text-slate-200">Strict JSON Ingestion</span></div>
+                        <div><span class="text-slate-400 block">Framework Strategy</span><span class="font-bold text-slate-900 dark:text-slate-200">Agile Sprint Layout</span></div>
+                        <div><span class="text-slate-400 block">System Response</span><span class="font-bold text-slate-900 dark:text-slate-200">Zero-Latency Syncing</span></div>
                     </div>
                 </div>
 
@@ -353,173 +327,189 @@
         </div>
     </section>
 
+    <!-- 4. ARTIFACTS GALLERY SECTION -->
     <section id="artifacts" class="py-20 bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-900 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
+            <!-- Section Header -->
             <div class="max-w-3xl mb-12">
                 <span class="text-xs font-bold tracking-wider uppercase text-indigo-600 dark:text-indigo-400">Governance & Controls</span>
                 <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl mt-2">
                     Project Management Artifacts
                 </h2>
                 <p class="text-base text-slate-600 dark:text-slate-400 mt-4">
-                    Actual project baselines and risk tracking logs demonstrating end-to-end oversight of complex, multi-warehouse operational lifecycles.
+                    Select a tab below to inspect the explicit milestone baselines and risk mitigation matrix frameworks mapped across your three primary venture lifecycles.
                 </p>
             </div>
 
+            <!-- Tab Navigation Buttons -->
             <div class="flex border-b border-slate-200 dark:border-slate-800 mb-8 space-x-4">
-                <button id="tab-milestones-btn" class="py-3 px-4 border-b-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 focus:outline-none transition-all cursor-pointer">
-                    Supply Chain Milestone Schedule
+                <button id="tab-milestones-btn" class="py-3 px-4 border-b-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-medium text-sm focus:outline-none transition-all cursor-pointer">
+                    Chronological Milestone Schedules
                 </button>
                 <button id="tab-risks-btn" class="py-3 px-4 border-b-2 border-transparent font-medium text-sm text-slate-500 hover:text-slate-700 hover:border-slate-300 dark:hover:text-slate-400 focus:outline-none transition-all cursor-pointer">
-                    Operations Risk Register
+                    Project Operational Risk Registers
                 </button>
             </div>
 
-            <div id="tab-milestones-content" class="block">
-                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-300">
+            <!-- ARTIFACT 1: CHRONOLOGICAL MILESTONE SCHEDULES CONTENT -->
+            <div id="tab-milestones-content" class="block space-y-12">
+                
+                <!-- Table Phase 1 -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
                     <table class="w-full text-left border-collapse bg-white dark:bg-slate-900 text-sm">
-                        <thead class="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 transition-colors duration-300">
+                        <thead class="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                             <tr>
-                                <th class="p-4 sm:p-5">Milestone / Phase</th>
-                                <th class="p-4 sm:p-5">Est. Duration</th>
-                                <th class="p-4 sm:p-5">Critical Dependencies</th>
-                                <th class="p-4 sm:p-5">PM Risk Mitigation Note</th>
+                                <th class="p-4">Phase 1: Bootstrap & Cash Velocity Milestone Stage</th>
+                                <th class="p-4">Core Focus Metric</th>
+                                <th class="p-4">Operational Execution Protocol</th>
                             </tr>
                         </thead>
-                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400 transition-colors duration-300">
-                            <tr class="bg-slate-50/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white">
-                                <td colspan="4" class="p-4 border-b border-slate-200 dark:border-slate-800 text-xs uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Phase 1: Sourcing & Capital Allocation</td>
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400">
+                            <tr class="bg-slate-100/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white"><td colspan="3" class="p-4 text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">Venture Baseline Cash Cow Engine</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 1: Sourcing & Digital Marketplace Arbitrage</td><td class="p-4 text-xs font-bold text-indigo-600">Minimum Capital Payout</td><td class="p-4">Scoured Facebook Marketplace, liquidations, and student ecosystems to identify severely undervalued, premium furniture assets. Negotiated instant-purchase acquisitions to maintain minimum capital exposure per asset.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 2: Rapid Sweat-Equity Refurbishment & Staging</td><td class="p-4 text-xs font-bold text-indigo-600">Value Maximization</td><td class="p-4">Transported acquired assets to a low-cost, centralized staging hub. Executed quick turnaround deep-cleaning, aesthetic conditioning, and physical structural modifications to rapidly maximize asset resale value.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 3: High-Velocity Digital Productization</td><td class="p-4 text-xs font-bold text-indigo-600">Market Outreach</td><td class="p-4">Staged and captured high-fidelity, optimized media assets of products. Published structured, benefits-focused listings across targeted consumer marketplaces, emphasizing immediate local availability and value.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 4: Same-Day Last-Mile Delivery Fulfillment</td><td class="p-4 text-xs font-bold text-indigo-600">Instant Digital Payout</td><td class="p-4">Utilized internal transit assets to offer competitive, fast-turnaround last-mile delivery. Used direct touchpoints during delivery to upsell secondary catalog items and secure instant digital cash clearances.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 5: Capital Reinvestment Loop</td><td class="p-4 text-xs font-bold text-indigo-600">Zero Frozen Capital</td><td class="p-4">Maintained a highly liquid position with zero capital lockup. Systematically reinvested retail profits into expanded acquisition runs, serving as the foundational baseline cash cow that capitalized later wholesale distributions.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Table Phase 2 -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <table class="w-full text-left border-collapse bg-white dark:bg-slate-900 text-sm">
+                        <thead class="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+                            <tr>
+                                <th class="p-4">Phase 2: Global Sourcing Gate Milestone</th>
+                                <th class="p-4">Est. Target Gap</th>
+                                <th class="p-4">Critical Logistical Dependency Nodes</th>
+                                <th class="p-4">Risk Control Balance Entry</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400">
+                            <tr class="bg-slate-100/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white"><td colspan="4" class="p-4 text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Bulk Maritime Container Logistics Scale-Up</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">M2.1: Sourcing Initiation & Factory Allocation Gate</td><td class="p-4">1-2 Weeks</td><td class="p-4">Clearance of upfront capital deposit loops; confirmation of overseas production runway configurations.</td><td class="p-4 text-xs bg-slate-50/50 dark:bg-slate-950/50"><strong>CapEx Strategy:</strong> Funding reserves provided continuously by the high-velocity Facebook Marketplace used cash cow engine.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">M2.2: Transit Departure & Ocean Tracking Node</td><td class="p-4">20-35 Days</td><td class="p-4">Generation of Port Bill of Lading codes; final settlement tracking prior to destination port unsealing.</td><td class="p-4 text-xs bg-slate-50/50 dark:bg-slate-950/50"><strong>Buffer Clearance:</strong> The PM leverages this long maritime window to clear floor footprint space inside the infrastructure hub.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">M2.3: Port Entry Customs Entry & Drayage Gate</td><td class="p-4">3-7 Days</td><td class="p-4">Clearing ISF terminal codes; coordinating regional semi-truck trailer logistics.</td><td class="p-4 text-xs bg-slate-50/50 dark:bg-slate-950/50"><strong>Demurrage Shield:</strong> Maintaining liquid emergency reserve accounts avoids escalating daily port storage fine layouts.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">M2.4: Multi-Facility Intake & Hand-Unload Gate</td><td class="p-4">1-2 Days</td><td class="p-4">Mobilizing low-cost intake labor pools; running intensive container de-vanning metrics.</td><td class="p-4 text-xs bg-slate-50/50 dark:bg-slate-950/50"><strong>Detention Control:</strong> Rapid, continuous team unloading schedules are run to clear the driver's free-time threshold window.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Table Phase 3 -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <table class="w-full text-left border-collapse bg-white dark:bg-slate-900 text-sm">
+                        <thead class="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+                            <tr>
+                                <th class="p-4">Phase 3: Domestic Dealer JIT Milestone Stage</th>
+                                <th class="p-4">Operational Focus Node</th>
+                                <th class="p-4">System Integration Protocol</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400">
+                            <tr class="bg-slate-100/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white"><td colspan="3" class="p-4 text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Phase 3 Growth Framework (Dual Warehouse Multi-Site Scale)</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 1: Continuous Demand Monitoring & Lean Testing</td><td class="p-4 text-xs font-bold text-indigo-400">Capital Efficiency</td><td class="p-4">Monitored real-time localized sales velocity and active buyer funnels. Placed small, continuous purchase orders with manufacturers to test design performance with negligible capital exposure or to fulfill pre-committed customer orders.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 2: Manufacturer Production & Freight Hand-off</td><td class="p-4 text-xs font-bold text-indigo-400">Logistics De-risking</td><td class="p-4">Orders were pushed straight to factory production. Under the negotiated dealer agreement, the manufacturer assumed complete logistical management and transport liability for regional freight, heavily insulating the business from transit cost volatility.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 3: 24-48 Hour Delivery Notification & Facility Prep</td><td class="p-4 text-xs font-bold text-indigo-400">Capacity Readiness</td><td class="p-4">Received freight carrier schedules 24 to 48 hours prior to local arrival. Triggered quick resource scheduling for warehouse labor, cleared cross-dock intake footprint, and finalized liquid capital availability for COD clearing.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 4: Arrival, Cash-on-Delivery (COD) Settlement & Gate Intake</td><td class="p-4 text-xs font-bold text-indigo-400">Capital Velocity</td><td class="p-4">Freight arrived at the regional distribution point. Settled the total order invoice value in full via direct Cash-on-Delivery (COD) protocols while simultaneously triggering an accelerated, multi-point gate-check quality inspection.</td></tr>
+                            <tr><td class="p-4 font-semibold text-slate-900 dark:text-white">Stage 5: Immediate Outbound Fulfillment (Hyper-Lean Status)</td><td class="p-4 text-xs font-bold text-indigo-400">Rapid Turnover</td><td class="p-4">Bypassed long-term stock staging due to lean back-stock operational rules. Transferred incoming inventory directly to outbound last-mile transit teams or immediate customer pickups, yielding near-zero holding costs and accelerated cash-to-cash cycles.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- ARTIFACT 2: PROJECT OPERATIONAL RISK REGISTERS CONTENT -->
+            <div id="tab-risks-content" class="hidden space-y-12">
+                
+                <!-- Risk Register Phase 1 -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <table class="w-full text-left border-collapse bg-white dark:bg-slate-900 text-sm">
+                        <thead class="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+                            <tr>
+                                <th class="p-4">Phase 1 Risk ID</th>
+                                <th class="p-4">Risk Event / Description</th>
+                                <th class="p-4 text-center">Likelihood</th>
+                                <th class="p-4 text-center">Impact</th>
+                                <th class="p-4">Mitigation Strategy (Project Management Action)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400">
+                            <tr class="bg-slate-100/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white"><td colspan="5" class="p-4 text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">Phase 1: Used Furniture Bootstrap Risk Register</td></tr>
+                            <tr>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-BOOT-01</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Inventory Supply Volatility: Unpredictable marketplace dynamics and inconsistent consumer listings restrict predictable pipeline sourcing.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 text-xs font-bold">High</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-xs">Diversified sourcing networks by engineering automated keyword notification scrapers and locking down direct volume loops with estate liquidation providers.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M1.1: Production Sourcing & PO Initiation</td>
-                                <td class="p-4 sm:p-5">1–2 Weeks</td>
-                                <td class="p-4 sm:p-5">Aggregated capital from local used furniture sourcing velocity; signed procurement agreement with overseas manufacturer.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Capital Lock-Up Mitigation:</strong> Upfront deposit timed precisely with cyclical high-volume used inventory liquidations to prevent draining daily operational working capital.</td>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-BOOT-02</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Sunk Cost on Damaged Assets: An acquired asset conceals major, non-remediable structural damage that eliminates its target margin.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-xs">Deployed a mandatory, 5-point physical diagnostics framework (assessing framework integrity, structural decay, and materials) preceding any capital hand-off.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M1.2: Container Deposit Clearance & Factory Allocation</td>
-                                <td class="p-4 sm:p-5">3–5 Days</td>
-                                <td class="p-4 sm:p-5">Clearance of 30%–50% wire transfer deposit; factory confirmation of production slot scheduling.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Just-In-Time (JIT) Funding:</strong> Used furniture sourcing runs are accelerated in the weeks leading up to this milestone to build a cash reserve buffer specifically for the wire transfer.</td>
-                            </tr>
-                            <tr class="bg-slate-50/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white">
-                                <td colspan="4" class="p-4 border-b border-slate-200 dark:border-slate-800 text-xs uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Phase 2: Manufacturing & Quality Control</td>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-BOOT-03</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Staging Footprint Gridlock: Intake velocities temporarily eclipse warehouse staging square footage, freezing incoming acquisitions.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 text-xs font-bold">High</span></td>
+                                <td class="p-4 text-xs">Enforced a product-velocity control ceiling: any catalog item occupying footprint past target turnaround thresholds triggered automatic price cascades or bundle markdown structures to flush inventory.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M2.1: Production Lifecycle Execution</td>
-                                <td class="p-4 sm:p-5">4–6 Weeks</td>
-                                <td class="p-4 sm:p-5">Consistent raw material availability at origin factory; uninterrupted cash flow from local used retail operations to cover ongoing fixed warehouse lease overhead.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Portfolio Balancing:</strong> Because manufacturing lead times completely freeze this capital, the core used-furniture reverse-logistics operation is run at maximum throughput to pay the bills and keep the physical storefront active.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M2.2: QC Approval & Freight Booking Acceptance</td>
-                                <td class="p-4 sm:p-5">3–7 Days</td>
-                                <td class="p-4 sm:p-5">Factory passing quality control inspection; shipping line container allocation acceptance (Origin Port).</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Freight Cost Controls:</strong> For split-consignment testing, this gate requires rigorous partner alignment to synchronize final shipping documents and divide origin logistics fees cleanly.</td>
-                            </tr>
-                            <tr class="bg-slate-50/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white">
-                                <td colspan="4" class="p-4 border-b border-slate-200 dark:border-slate-800 text-xs uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Phase 3: Transit & Maritime Logistics</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M3.1: Origin Port Handling & Vessel Departure</td>
-                                <td class="p-4 sm:p-5">5–10 Days</td>
-                                <td class="p-4 sm:p-5">Ocean Bill of Lading (BOL) generation; wire transfer clearance for the remaining balance of the goods prior to cargo release.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Liquidity Management:</strong> This milestone represents peak capital strain. Sourcing teams prioritize hyper-local, fast-turning used items to rapidly generate the cash needed to clear the final invoice before the ship sails.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M3.2: Ocean Freight Transit & Track-and-Trace</td>
-                                <td class="p-4 sm:p-5">20–35 Days</td>
-                                <td class="p-4 sm:p-5">Stable maritime conditions; accurate ETA updates from freight forwarders.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Buffer Management:</strong> Capital is entirely dead while at sea. The PM leverages this fixed window to aggressively clear out old used stock in the warehouse, physically carving out floor space for the incoming new inventory.</td>
-                            </tr>
-                            <tr class="bg-slate-50/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white">
-                                <td colspan="4" class="p-4 border-b border-slate-200 dark:border-slate-800 text-xs uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Phase 4: Customs, Inland Freight, & Arrival</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M4.1: Port Arrival, Customs Entry, & ISF Clearance</td>
-                                <td class="p-4 sm:p-5">3–7 Days</td>
-                                <td class="p-4 sm:p-5">Submission of commercial invoice, packing lists, and customs documentation; payment of customs duties and port harbor fees.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Demurrage Risk Avoidance:</strong> Port storage and demurrage fees accumulate rapidly. Cash flow targets from the storefront must prioritize liquidity to guarantee immediate duty payments upon port arrival.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M4.2: Rail Intermodal & Inland Truck Drayage</td>
-                                <td class="p-4 sm:p-5">5–12 Days</td>
-                                <td class="p-4 sm:p-5">Availability of inland chassis and regional rail/freight capacity; coordination with inbound semi-truck carrier.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Carrier Management:</strong> Establish a strict communication protocol with the freight brokerage to receive a minimum 48-hour delivery window, ensuring the lean warehouse team can be dynamically scheduled.</td>
-                            </tr>
-                            <tr class="bg-slate-50/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white">
-                                <td colspan="4" class="p-4 border-b border-slate-200 dark:border-slate-800 text-xs uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Phase 5: Multi-Warehouse Receiving & Staging</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M5.1: Semi-Truck Gate Arrival & Hand-Unloading</td>
-                                <td class="p-4 sm:p-5">1–2 Hours</td>
-                                <td class="p-4 sm:p-5">Full deployment of internal staff for manual de-vanning.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Detention Fee Mitigation:</strong> Because shipments are unloaded completely by hand without automated equipment, team shifts are optimized for rapid, continuous labor to beat the carrier's 1-hour free time window.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M5.2: De-Crating, Sorting, & Quality Audit</td>
-                                <td class="p-4 sm:p-5">1–2 Days</td>
-                                <td class="p-4 sm:p-5">Successful, damage-free unboxing; matching physical item counts against the factory packing list.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Claim Management:</strong> Immediate documentation of any transit damages is required to fulfill warranty protocols, safeguarding the venture against margin loss on new items.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">M5.3: Floor Staging & Showroom Optimization</td>
-                                <td class="p-4 sm:p-5">2–3 Days</td>
-                                <td class="p-4 sm:p-5">Completed preparation of the showroom (e.g., renovated flooring, layout adjustments); strategic balancing of showroom floor space.</td>
-                                <td class="p-4 sm:p-5 text-xs bg-slate-50/30 dark:bg-slate-950/50"><strong class="text-indigo-600 dark:text-indigo-400">Floor Space Velocity:</strong> Inventory is segregated into the hybrid matrix: high-turnover used furniture is staged to continue paying fixed operational costs, while the high-ticket new manufacturer lines are aggressively showcased to drive the scalable future of the enterprise.</td>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-BOOT-04</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Site Delivery & Transit Liability: Navigating heavy inventory through high-risk residential pathways threatens property damage or personal safety.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 text-xs font-bold">High</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 text-xs font-bold">High</span></td>
+                                <td class="p-4 text-xs">Instituted explicit checkout criteria requiring digital verification of entryway clearances by the buyer, and introduced specialized team-lifting rigging to minimize single-operator strain.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
 
-            <div id="tab-risks-content" class="hidden">
-                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-300">
+                <!-- Risk Register Phase 3 Matrix -->
+                <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
                     <table class="w-full text-left border-collapse bg-white dark:bg-slate-900 text-sm">
-                        <thead class="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 transition-colors duration-300">
+                        <thead class="bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                             <tr>
-                                <th class="p-4 sm:p-5">Risk Description</th>
-                                <th class="p-4 sm:p-5 text-center">Impact Score</th>
-                                <th class="p-4 sm:p-5">Current Vulnerability Metric</th>
-                                <th class="p-4 sm:p-5">Strategic Response Strategy</th>
+                                <th class="p-4">Phase 3 Risk ID</th>
+                                <th class="p-4">Risk Event / Description</th>
+                                <th class="p-4 text-center">Likelihood</th>
+                                <th class="p-4 text-center">Impact</th>
+                                <th class="p-4">Mitigation Strategy (Project Management Action)</th>
                             </tr>
                         </thead>
-                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400 transition-colors duration-300">
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-400">
+                            <tr class="bg-slate-100/50 dark:bg-slate-950 font-medium text-slate-900 dark:text-white"><td colspan="5" class="p-4 border-b border-slate-200 dark:border-slate-800 text-xs uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Phase 3: Lean Operations Risk Register (JIT & COD Matrix)</td></tr>
                             <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">
-                                    <strong>Capital Lock-up / Cash Flow Volatility</strong>
-                                    <p class="text-xs text-slate-500 mt-1">Slow-moving international logistics lines completely freezing operational working capital during 4-6 week factory manufacturing lifecycles.</p>
-                                </td>
-                                <td class="p-4 sm:p-5 text-center"><span class="px-2 py-1 rounded bg-red-50 dark:bg-red-950/50 border border-transparent dark:border-red-900 text-red-700 dark:text-red-400 font-bold text-xs">CRITICAL</span></td>
-                                <td class="p-4 sm:p-5">Upfront container deposit fees timed precisely with regional high-turnover inventory liquidation cycles.</td>
-                                <td class="p-4 sm:p-5 text-xs">Accelerating hyper-local reverse-logistics channels to build a robust cash reserve buffer immediately preceding international wire transfers.</td>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-COD-01</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Working Capital Crunch: Incoming retail customer cash flow fails to clear before full COD invoice payout is demanded at delivery.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 text-xs font-bold">High</span></td>
+                                <td class="p-4 text-xs">Maintained an uncompromised operating capital reserve account scaled to 1.5x the median purchase order value to guarantee fluid hand-offs and protect carrier SLAs.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">
-                                    <strong>Physical Warehouse Capacity Bottlenecks</strong>
-                                    <p class="text-xs text-slate-500 mt-1">Staging staff and delivery drivers facing extreme space constraints across dual active locations during major freight intake arrivals.</p>
-                                </td>
-                                <td class="p-4 sm:p-5 text-center"><span class="px-2 py-1 rounded bg-amber-50 dark:bg-amber-950/50 border border-transparent dark:border-amber-900 text-amber-700 dark:text-amber-400 font-bold text-xs">HIGH</span></td>
-                                <td class="p-4 sm:p-5">Fixed 20-35 day ocean transit windows utilized to execute aggressive clearance protocols on legacy warehouse inventory.</td>
-                                <td class="p-4 sm:p-5 text-xs">Physically carving out showroom and back-end floor allocations explicitly for incoming new product mixtures prior to terminal drayage.</td>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-COD-02</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Short-Notice Labor Bottleneck: The 24-48 hour delivery notification window conflicts with peak retail hours, stranding intake processes.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 text-xs font-bold">High</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-xs">Formulated an on-call workforce pool with modular text-alert sequences linked directly to freight status changes, allowing automatic scale-up of warehouse staffing within 4 hours.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">
-                                    <strong>Transit Damages & Product Integrity Margin Loss</strong>
-                                    <p class="text-xs text-slate-500 mt-1">Unboxed or poorly crated international freight sustaining freight damage, causing heavy write-downs on high-ticket manufacturer lines.</p>
-                                </td>
-                                <td class="p-4 sm:p-5 text-center"><span class="px-2 py-1 rounded bg-amber-50 dark:bg-amber-950/50 border border-transparent dark:border-amber-900 text-amber-700 dark:text-amber-400 font-bold text-xs">HIGH</span></td>
-                                <td class="p-4 sm:p-5">Rigid 1-2 day turnaround windows enforced immediately following container unloading to execute exhaustive quality auditing protocols.</td>
-                                <td class="p-4 sm:p-5 text-xs">Mandatory visual and structural damage documentation protocols implemented to satisfy factory warranty guidelines and secure immediate credit flags.</td>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-COD-03</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Defective Delivery Dispute: Inventory suffers damage via third-party freight provider, but full COD payment is required by driver to unseal.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-green-100 dark:bg-green-950 text-green-700 dark:text-green-400 text-xs">Low</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-400 text-xs font-bold">High</span></td>
+                                <td class="p-4 text-xs">Negotiated a strict "Gate-Check Inspection" addendum allowing rapid unboxing of a 10% batch sample prior to final funds discharge, backed by a direct factory replacement credit structure.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 sm:p-5 font-medium text-slate-900 dark:text-white">
-                                    <strong>Demurrage and Detention Port Penalties</strong>
-                                    <p class="text-xs text-slate-500 mt-1">Port terminal congestion and truck chassis scarcity causing container pickup delays, generating massive daily storage fee exposure.</p>
-                                </td>
-                                <td class="p-4 sm:p-5 text-center"><span class="px-2 py-1 rounded bg-yellow-50 dark:bg-yellow-950/50 border border-transparent dark:border-yellow-900 text-yellow-700 dark:text-yellow-400 font-bold text-xs">MEDIUM</span></td>
-                                <td class="p-4 sm:p-5">Enforcing a strict minimum 48-hour inbound arrival alert window directly with the regional freight brokerage network.</td>
-                                <td class="p-4 sm:p-5 text-xs">Dynamically adjusting internal staff schedules to optimize continuous hand-unloading shifts, clearing the container gate within the carrier’s 1-hour free tier.</td>
+                                <td class="p-4 font-mono font-bold text-slate-900 dark:text-white">RSK-COD-04</td>
+                                <td class="p-4 font-medium text-slate-900 dark:text-white">Stockout on Core Inventory: Hyper-lean inventory targets fail to cushion a sudden localized velocity spike, causing sales loss.</td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-center"><span class="px-2 py-0.5 rounded bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-400 text-xs">Medium</span></td>
+                                <td class="p-4 text-xs">Programmed an automated re-order rule. The moment floor or buffer inventory dipped beneath 1 unit, a rolling replacement PO was compiled and dispatched instantly to the factory.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -529,6 +519,7 @@
         </div>
     </section>
 
+    <!-- 5. FINAL CONTACT & FOOTER SECTION -->
     <section id="contact" class="py-20 bg-slate-900 text-white border-t border-slate-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-2xl">
             <span class="text-xs font-bold tracking-wider uppercase text-indigo-400">Professional Inquiries</span>
@@ -537,6 +528,7 @@
                 I am currently open to project management, logistics coordination, and operations roles where I can deliver structured execution, lean strategy, and process optimization. 
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <!-- Replace with your actual email link -->
                 <a href="mailto:your.email@example.com" class="w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-700 font-medium rounded-lg shadow-lg shadow-indigo-900 transition-all text-center">
                     Contact via Email
                 </a>
@@ -550,6 +542,7 @@
         </div>
     </section>
 
+    <!-- VANILLA JAVASCRIPT FOR NAVIGATION & THEME INTERACTIONS -->
     <script>
         // Toggle mobile nav menu visibility
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
